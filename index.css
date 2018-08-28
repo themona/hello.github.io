@@ -1,0 +1,156 @@
+:root{
+	font-size: 16px;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	margin: 5vw;
+}
+.banner .card{
+  
+  background-attachment: fixed;	
+  background-image: url(fix.jpg);
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0px 3px 20px 2px #35eea4;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  }
+.banner .card .heading {
+    color: orange;
+    font-family: 'Metamorphous', cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1vh;
+    padding: 5vw; }
+.banner .card .sub-heading {
+    position: relative;
+    color: red;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.3rem;
+    margin: 0;
+   padding: 0 5vw 2vw; }
+
+.banner .card .sub-heading button {
+      background: none;
+      border: none;
+      border-radius: 5px;
+      color: #35eea4;
+      font-family: "Istok Web", sans-serif;
+      font-size: 1rem ;
+      letter-spacing: 8px;
+      margin-top: 2vh;
+      padding: 10px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #3603ff,#a41ee9);
+      transition: box-shadow 0.3s linear 0.1s; }
+.banner .card .sub-heading button:hover {
+      cursor: pointer;
+      box-shadow: 0 3px 20px 0 #35eea4; }   
+
+.about {
+	background-image: url(myimg.jpg);
+	background-size: cover;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh;
+   }
+
+  .about .my-img {
+    border: 1px solid #35eea4;
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px 2px #2c2c2c;
+    width: 25vw;
+    
+  }
+
+.about .subpara {
+  margin-left: 3%;
+  color: white;
+  width: 60%;
+  font-size: 2rem;
+  font-family: 'Satisfy', cursive;
+}
+.interest{
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh;
+  font-family: 'Monoton', cursive;
+  
+}
+.photo {
+  margin-top: 10%; }
+
+.interest .ml
+{   color: red;
+	margin-left: 0;
+	width: 30%;
+}  
+
+  .photo .pic1{
+  	position: relative;
+  	height: 40vh;
+  	width: 30%;
+  	
+  	 }
+ .photo .pic2{
+  	position: relative;
+  	height: 40vh;
+  	width: 30%;
+  	
+  	margin-left: 4% } 
+ .photo .pic3{
+  	position: relative;
+  	height: 40vh;
+  	width: 25%;
+  	
+  	margin-left: 4% } 
+.project  {
+  height: 40vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-color: pink;
+   }
+.icon {
+	margin-top: 2%; }
+  .icon .ico {
+  	margin-right: 2%;
+    width: 3%;
+    height: 15%; } 
+
+@media only screen and (max-width: 725px)
+{
+	.about{
+		flex-direction: column;
+	}
+	.about .mypic{
+		order: -1;
+	}
+	.about .my-img{
+		width: 60vw;
+	}
+	.interest{
+		flex-direction: column;
+	}
+	.interest .photo{
+		order: 1;
+	}
+	.interest .pic1{
+		width: 60vw;
+	}
+	.interest .pic2{
+		width: 60vw;
+	}
+	.interest .pic3{
+		width: 60vw;
+	}
+
+}
